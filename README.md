@@ -20,7 +20,7 @@ Para configurar el módulo, agrega la siguiente configuración a tu archivo `con
     module: "MMM-AuvasaTracker",
     position: "top_right", // La posición donde quieres que aparezca el módulo
     config: {
-        headerParada: true,
+        headerParada: true, // Mostrar o no la parada configurada en el header
         headerText: "Buses de AUVASA",
         parada: "000", // Número de la parada
         resultados: 10, // Número de lineas de buses a mostrar
