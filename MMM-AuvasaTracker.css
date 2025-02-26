@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+* { font-family: 'Onest'; }
+
+.tdtable {
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.bus { font-weight: 600 }
+
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: clamp(1rem, 1.3vw, 1rem);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    filter: brightness(0.90);
+}
+
+.tiempo {
+    font-weight: 500;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+#l1 { background: #36AD30; color: #fff; } 
+#l2 { background: #F5C636; color: #000; }
+#l3 { background: #EE4BA4; color: #fff; }
+#l4 { background: #AA541A; color: #fff; }
+#l5 { background: #2FB7B7; color: #fff; }
+#l6 { background: #F59EC4; color: #000; }
+#l7 { background: #7A2B37; color: #fff; }
+#l8 { background: #EA5D00; color: #fff; }
+#l9 { background: #009EE6; color: #fff; }
+#l10 { background: #A01A4A; color: #fff; }
+#l13 { background: #0051A1; color: #fff; }
+#l14 { background: #887CB9; color: #000; }
+#l16 { background: #82D0F7; color: #000; }
+#l17 { background: #C2D400; color: #fff; }
+#l18 { background: #BEBCBD; color: #000; }
+#l19 { background: #E59351; color: #000; }
+#lC1 { background: #555553; color: #fff; }
+#lC2 { background: #6C6C69; color: #fff; }
+#l24 { background: #0F4895; color: #fff; }
+#lH { background: #E42333; color: #000; }
+#lB1 { background: #236B1F; color: #fff; }
+#lB2 { background: #9A7708; color: #fff; }
+#lB3 { background: #A84400; color: #fff; }
+#lB4 { background: #0099FF; color: #fff; }
+#lB5 { background: #910D55; color: #fff; }
+#lP1 { background: #792B37; color: #fff; }
+#lP2 { background: #792B37; color: #fff; }
+#lP3 { background: #792B37; color: #fff; }
+#lP6 { background: #792B37; color: #fff; }
+#lP7 { background: #792B37; color: #fff; }
+#lP13 { background: #792B37; color: #fff; }
+#lPSC1 { background: #792B37; color: #fff; }
+#lPSC2 { background: #792B37; color: #fff; }
+#lPSC3 { background: #792B37; color: #fff; }
+#lM1 { background: #532FA2; color: #fff; }
+#lM2 { background: #532FA2; color: #fff; }
+#lM3 { background: #532FA2; color: #fff; }
+#lM4 { background: #532FA2; color: #fff; }
+#lM5 { background: #532FA2; color: #fff; }
+#lM6 { background: #532FA2; color: #fff; }
+#lM7 { background: #532FA2; color: #fff; }
+#lF1 { background: #006D38; color: #fff; }
+#lF2 { background: #006D38; color: #fff; }
+#lF3 { background: #006D38; color: #fff; }
+#lF4 { background: #006D38; color: #fff; }
+#lF5 { background: #006D38; color: #fff; }
+#lF6 { background: #006D38; color: #fff; }
+#l23 { background: #FCC600; color: #fff; }
+#l26 { background: #80D0F7; color: #000; }
+#lLP { background: #00CDAE; color: #fff; }
+#lLC { background: #7DDE42; color: #000; }
+#lLD { background: #D536FD; color: #000; }
+#lU1 { background: #FF3067; color: #000; }
+#lU8 { background: #FF3067; color: #000; }
+
+
+
+
+
