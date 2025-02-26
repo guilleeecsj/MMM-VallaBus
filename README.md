@@ -22,10 +22,10 @@ Para configurar el módulo, agrega la siguiente configuración a tu archivo `con
     config: {
         headerParada: true,
         headerText: "Buses de AUVASA",
-        parada: "000", // Código de la parada
-        resultados: 10, // Número de resultados a mostrar
-        apiIP: "localhost", // IP de la API
-        apiPort: "3000", // Puerto de la API
+        parada: "000", // Número de la parada
+        resultados: 10, // Número de lineas de buses a mostrar
+        apiIP: "localhost", // IP donde se aloja la API
+        apiPort: "3000", // Puerto donde se encuentra la API
     }
 }
 ```
