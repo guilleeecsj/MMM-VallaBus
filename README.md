@@ -40,7 +40,7 @@ Para configurar el módulo, agrega la siguiente configuración a tu archivo `con
 | `apiPort` | `text` | 3000 | Configurar el puerto donde está alojada la API. |
 
 ## Contribuciones
-Las contribuciones en este proyecto son bienvenidas. Si desea aportar algo, abra una issue o una pull request.
+Las contribuciones en este proyecto son bienvenidas. Si desea aportar algo, abra una [issue](https://github.com/xgbdev/MMM-AuvasaTracker/issues) o una [pull request](https://github.com/xgbdev/MMM-AuvasaTracker/pulls).
 
 ## Licencia
 Este proyecto está licenciado bajo la Licencia [MIT](https://opensource.org/license/mit).
