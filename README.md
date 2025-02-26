@@ -6,6 +6,11 @@ MMM-AuvasaTracker es un módulo para MagicMirror² que muestra información en t
 
 ![Foto del ejemplo de uso del modulo MMM-AuvasaTracker para MagicMirror](https://i.ibb.co/Fb4Qcnkk/image.png)
 
+## Dependencias
+
+- [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror)
+- [API de Auvasa](https://github.com/DaviidMM/api-auvasa), hecho por [DaviidMM](https://github.com/DaviidMM)
+
 ## Configuración
 
 Para configurar el módulo, agrega la siguiente configuración a tu archivo `config.js` de MagicMirror²:
@@ -24,12 +29,6 @@ Para configurar el módulo, agrega la siguiente configuración a tu archivo `con
     }
 }
 ```
-
-## Dependencias
-
-- [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror)
-- [API de Auvasa](https://github.com/DaviidMM/api-auvasa), hecho por [DaviidMM](https://github.com/DaviidMM)
-
 
 | Configuración | Tipo | Valor por defecto | Descripcion |
 | --- | --- | --- | --- |
