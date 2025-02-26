@@ -21,6 +21,15 @@ Para configurar el módulo, agrega la siguiente configuración a tu archivo `con
 }
 ```
 
+| Configuración | Tipo | Valor por defecto | Descripcion |
+| --- | --- | --- | --- |
+| `headerParada` | `boolean` | true | Activar / Desactivar que se muestre la parada configurada en el header |
+| `headerText` | `text` | Buses de AUVASA | Poner un texto determinado como header del modulo. |
+| `parada` | `number` | 000 | Configurar la parada de la cual quieres sacar la información. |
+| `resultados` | `number` | 10 | Limitar el numero de lineas que quieres que salga en el modulo. |
+| `apiIP` | `text` | localhost | Configurar el host donde está alojada la API. |
+| `apiPort` | `text` | 3000 | Configurar el puerto donde está alojada la API. |
+
 ## Dependencias
 
 - [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror)
