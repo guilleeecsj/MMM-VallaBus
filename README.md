@@ -1,6 +1,6 @@
 # MMM-AuvasaTracker
 
-MMM-AuvasaTracker es un módulo para MagicMirror² que muestra información en tiempo real sobre los autobuses de AUVASA.
+MMM-AuvasaTracker es un módulo para [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) que muestra información en tiempo real sobre los autobuses de [AUVASA](https://www.auvasa.es).
 
 ## Ejemplo de uso
 
