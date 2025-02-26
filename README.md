@@ -25,6 +25,11 @@ Para configurar el módulo, agrega la siguiente configuración a tu archivo `con
 }
 ```
 
+## Dependencias
+
+- [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror)
+- [API de Auvasa](https://github.com/DaviidMM/api-auvasa), hecho por [DaviidMM](https://github.com/DaviidMM)
+
 | Configuración | Tipo | Valor por defecto | Descripcion |
 | --- | --- | --- | --- |
 | `headerParada` | `boolean` | true | Activar / Desactivar que se muestre la parada configurada en el header |
@@ -33,11 +38,6 @@ Para configurar el módulo, agrega la siguiente configuración a tu archivo `con
 | `resultados` | `number` | 10 | Limitar el numero de lineas que quieres que salga en el modulo. |
 | `apiIP` | `text` | localhost | Configurar el host donde está alojada la API. |
 | `apiPort` | `text` | 3000 | Configurar el puerto donde está alojada la API. |
-
-## Dependencias
-
-- [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror)
-- [API de Auvasa](https://github.com/DaviidMM/api-auvasa), hecho por [DaviidMM](https://github.com/DaviidMM)
 
 ## Contribuciones
 Las contribuciones son bienvenidas. Por favor, abre una issue o una pull request.
