@@ -2,6 +2,10 @@
 
 MMM-AuvasaTracker es un módulo para MagicMirror² que muestra información en tiempo real sobre los autobuses de AUVASA.
 
+## Ejemplo de uso
+
+![Foto del ejemplo de uso del modulo MMM-AuvasaTracker para MagicMirror](https://i.ibb.co/Fb4Qcnkk/image.png)
+
 ## Configuración
 
 Para configurar el módulo, agrega la siguiente configuración a tu archivo `config.js` de MagicMirror²:
@@ -34,10 +38,6 @@ Para configurar el módulo, agrega la siguiente configuración a tu archivo `con
 
 - [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror)
 - [API de Auvasa](https://github.com/DaviidMM/api-auvasa), hecho por [DaviidMM](https://github.com/DaviidMM)
-
-## Ejemplo de uso
-
-![Foto del ejemplo de uso del modulo MMM-AuvasaTracker para MagicMirror](https://i.ibb.co/Fb4Qcnkk/image.png)
 
 ## Contribuciones
 Las contribuciones son bienvenidas. Por favor, abre una issue o una pull request.
