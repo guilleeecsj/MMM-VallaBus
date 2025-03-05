@@ -11,9 +11,28 @@ MMM-AuvasaTracker es un módulo para [MagicMirror²](https://github.com/MagicMir
 - [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror)
 - [API de Auvasa](https://github.com/DaviidMM/api-auvasa), hecho por [DaviidMM](https://github.com/DaviidMM)
 
-## Configuración
+## Instalación del módulo
 
-Para configurar el módulo, agrega la siguiente configuración a tu archivo `config.js` de MagicMirror²:
+
+
+### Despliegue de la API de AUVASA en Docker
+
+```
+cd ~/
+git clone https://github.com/VallaBus/api-auvasa.git
+cd api-auvasa
+mv .env.template .env
+docker compose up -d
+```
+
+### Integración del módulo en el MagicMirror
+
+```
+cd ~/MagicMirror/modules
+git clone https://github.com/xgbdev/MMM-AuvasaTracker.git
+```
+
+Una vez esté el módulo ya puesto en la carpeta de `modules` debes agregar la siguiente configuración al archivo `config.js` de MagicMirror²:
 
 ```js
 {
