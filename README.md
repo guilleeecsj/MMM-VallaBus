@@ -1,6 +1,6 @@
 # MMM-VallaBus
 
-MMM-VallaBus es un módulo para [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) que muestra información en tiempo real sobre los autobuses de [AUVASA](https://www.auvasa.es).
+MMM-VallaBus es un módulo para [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) que muestra información en tiempo real sobre los autobuses de diferentes empresas que operan en Valladolid.
 
 ## Ejemplo de uso
 
