@@ -1,15 +1,15 @@
-# MMM-AuvasaTracker
+# MMM-VallaBus
 
-MMM-AuvasaTracker es un módulo para [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) que muestra información en tiempo real sobre los autobuses de [AUVASA](https://www.auvasa.es).
+MMM-VallaBus es un módulo para [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) que muestra información en tiempo real sobre los autobuses de [AUVASA](https://www.auvasa.es).
 
 ## Ejemplo de uso
 
-![Foto del ejemplo de uso del modulo MMM-AuvasaTracker para MagicMirror](https://i.ibb.co/Fb4Qcnkk/image.png)
+![Foto del ejemplo de uso del modulo MMM-VallaBus para MagicMirror](https://i.ibb.co/Fb4Qcnkk/image.png)
 
 ## Dependencias
 
 - [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror)
-- [API de Auvasa](https://github.com/DaviidMM/api-auvasa), hecho por [DaviidMM](https://github.com/DaviidMM)
+- [API de Auvasa](https://github.com/VallaBus/api-auvasa), creado originalmente por [DaviidMM](https://github.com/DaviidMM)
 
 ## Instalación del módulo
 
@@ -30,18 +30,18 @@ npm start
 
 ```
 cd ~/MagicMirror/modules
-git clone https://github.com/xgbdev/MMM-AuvasaTracker.git
+git clone https://github.com/guilleeecsj/MMM-VallaBus.git
 ```
 
 Una vez esté el módulo ya puesto en la carpeta de `modules` debes agregar la siguiente configuración al archivo `config.js` de MagicMirror²:
 
 ```js
 {
-    module: "MMM-AuvasaTracker",
+    module: "MMM-VallaBus",
     position: "top_right", // La posición donde quieres que aparezca el módulo
     config: {
         headerParada: true, // Mostrar o no la parada configurada en el header
-        headerText: "Buses de AUVASA",
+        headerText: "Buses de VALLADOLID",
         parada: "000", // Número de la parada
         resultados: 10, // Número de lineas de buses a mostrar
         apiIP: "localhost", // IP donde se aloja la API
@@ -60,7 +60,7 @@ Una vez esté el módulo ya puesto en la carpeta de `modules` debes agregar la s
 | `apiPort` | `text` | 3000 | Configurar el puerto donde está alojada la API. |
 
 ## Contribuciones
-Las contribuciones en este proyecto son bienvenidas. Si desea aportar algo, abra una [issue](https://github.com/xgbdev/MMM-AuvasaTracker/issues) o una [pull request](https://github.com/xgbdev/MMM-AuvasaTracker/pulls).
+Las contribuciones en este proyecto son bienvenidas. Si desea aportar algo, abra una [issue](https://github.com/guilleeecsj/MMM-VallaBus/issues) o una [pull request](https://github.com/guilleeecsj/MMM-VallaBus/pulls).
 
 ## Licencia
 Este proyecto está licenciado bajo la Licencia [MIT](https://opensource.org/license/mit).
