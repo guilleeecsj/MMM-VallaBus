@@ -9,15 +9,15 @@ MMM-VallaBus es un módulo para [MagicMirror²](https://github.com/MagicMirrorOr
 ## Dependencias
 
 - [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror)
-- [API de Auvasa](https://github.com/VallaBus/api-auvasa) (creada originalmente por [DaviidMM](https://github.com/DaviidMM)) o la API pública remota.
+- [API de VallaBus](https://github.com/VallaBus/api-auvasa) (creada originalmente por [DaviidMM](https://github.com/DaviidMM) y [Nukeador](https://github.com/nukeador)
 
 ## Instalación del módulo
 
 ### Opción A: Usando la API pública (Recomendado y por defecto)
-No requiere ningún despliegue adicional. El módulo consultará directamente a `https://gtfs.vallabus.com`.
+No requiere ningún despliegue adicional. El módulo consultará directamente a la API GTFS pública de VallaBus.
 
 ### Opción B: Despliegue de la API de AUVASA en local
-Si prefieres alojar la API en tu propio servidor o Raspberry Pi para un funcionamiento local:
+Si prefieres alojar la API en tu propio servidor o Raspberry PI para un funcionamiento local:
 
 ```bash
 cd ~/
