@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+/* Limita la tipografía y las propiedades al módulo para evitar afectar a otros */
+.MMM-VallaBus {
+    font-family: 'Onest', sans-serif;
+}
+
+.MMM-VallaBus * {
+    font-family: 'Onest', sans-serif;
+}
+
+/* Clases de estructura y diseño de filas */
+.MMM-VallaBus .vallabus-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.MMM-VallaBus .vallabus-row {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr 5rem;
+    column-gap: 1.2rem;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.MMM-VallaBus .bus {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}
+
+.MMM-VallaBus .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 1.8rem;
+    border-radius: 9999px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    filter: brightness(0.90);
+    line-height: normal;
+    box-sizing: border-box;
+    background-color: #444;
+    color: #fff;
+}
+
+.MMM-VallaBus .tiempo {
+    font-weight: 500;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.MMM-VallaBus .tiempo.llegando {
+    color: #2ecc71;
+    font-weight: 700;
+    animation: blink 1.5s infinite ease-in-out;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/* Avisos de estado de la API y de ausencia de datos */
+.MMM-VallaBus .api-status-warning {
+    display: flex;
+    align-items: center;
+    background-color: #332400;
+    color: #FFC107;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #5a4300;
+    box-shadow: 0 0px 5px rgba(255, 193, 7, 0.3);
+}
+
+.MMM-VallaBus .no-data {
+    display: flex;
+    align-items: center;
+    background-color: #330000;
+    color: #ff0707;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #5a0000;
+    box-shadow: 0 0px 5px rgba(255, 7, 7, 0.3);
+}
+
+.MMM-VallaBus .separator {
+    margin-right: 11px;
+    color: #eee;
+    opacity: 0.8;
+}
+
+.MMM-VallaBus .warning-icon {
+    width: 22px;
+    height: 22px;
+    fill: #FFC107;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.MMM-VallaBus .error-icon {
+    width: 32px;
+    height: 32px;
+    fill: #ff0707;
+    margin-right: 6px;
+    flex-shrink: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Colores oficiales de las líneas de autobús de Valladolid (clases CSS) */
+.MMM-VallaBus .l1 {
+    background: #36AD30;
+    color: #fff;
+}
+
+.MMM-VallaBus .l2 {
+    background: #F5C636;
+    color: #000;
+}
+
+.MMM-VallaBus .l3 {
+    background: #EE4BA4;
+    color: #fff;
+}
+
+.MMM-VallaBus .l4 {
+    background: #AA541A;
+    color: #fff;
+}
+
+.MMM-VallaBus .l5 {
+    background: #2FB7B7;
+    color: #fff;
+}
+
+.MMM-VallaBus .l6 {
+    background: #F59EC4;
+    color: #000;
+}
+
+.MMM-VallaBus .l7 {
+    background: #7A2B37;
+    color: #fff;
+}
+
+.MMM-VallaBus .l8 {
+    background: #EA5D00;
+    color: #fff;
+}
+
+.MMM-VallaBus .l9 {
+    background: #009EE6;
+    color: #fff;
+}
+
+.MMM-VallaBus .l10 {
+    background: #A01A4A;
+    color: #fff;
+}
+
+.MMM-VallaBus .l13 {
+    background: #0051A1;
+    color: #fff;
+}
+
+.MMM-VallaBus .l14 {
+    background: #887CB9;
+    color: #000;
+}
+
+.MMM-VallaBus .l16 {
+    background: #82D0F7;
+    color: #000;
+}
+
+.MMM-VallaBus .l17 {
+    background: #C2D400;
+    color: #fff;
+}
+
+.MMM-VallaBus .l18 {
+    background: #BEBCBD;
+    color: #000;
+}
+
+.MMM-VallaBus .l19 {
+    background: #E59351;
+    color: #000;
+}
+
+.MMM-VallaBus .lC1 {
+    background: #555553;
+    color: #fff;
+}
+
+.MMM-VallaBus .lC2 {
+    background: #6C6C69;
+    color: #fff;
+}
+
+.MMM-VallaBus .l24 {
+    background: #0F4895;
+    color: #fff;
+}
+
+.MMM-VallaBus .lH {
+    background: #E42333;
+    color: #000;
+}
+
+.MMM-VallaBus .lB1 {
+    background: #236B1F;
+    color: #fff;
+}
+
+.MMM-VallaBus .lB2 {
+    background: #9A7708;
+    color: #fff;
+}
+
+.MMM-VallaBus .lB3 {
+    background: #A84400;
+    color: #fff;
+}
+
+.MMM-VallaBus .lB4 {
+    background: #0099FF;
+    color: #fff;
+}
+
+.MMM-VallaBus .lB5 {
+    background: #910D55;
+    color: #fff;
+}
+
+.MMM-VallaBus .lP1,
+.MMM-VallaBus .lP2,
+.MMM-VallaBus .lP3,
+.MMM-VallaBus .lP6,
+.MMM-VallaBus .lP7 {
+    background: #792B37;
+    color: #fff;
+}
+
+.MMM-VallaBus .lP13 {
+    background: #792B37;
+    color: #fff;
+    font-size: 20px;
+}
+
+.MMM-VallaBus .lPSC1,
+.MMM-VallaBus .lPSC2,
+.MMM-VallaBus .lPSC3 {
+    background: #792B37;
+    color: #fff;
+    font-size: 18px;
+}
+
+.MMM-VallaBus .lM1,
+.MMM-VallaBus .lM2,
+.MMM-VallaBus .lM3,
+.MMM-VallaBus .lM4,
+.MMM-VallaBus .lM5,
+.MMM-VallaBus .lM6,
+.MMM-VallaBus .lM7 {
+    background: #532FA2;
+    color: #fff;
+}
+
+.MMM-VallaBus .lF1,
+.MMM-VallaBus .lF2,
+.MMM-VallaBus .lF3,
+.MMM-VallaBus .lF4,
+.MMM-VallaBus .lF5,
+.MMM-VallaBus .lF6 {
+    background: #006D38;
+    color: #fff;
+}
+
+.MMM-VallaBus .l23 {
+    background: #FCC600;
+    color: #fff;
+}
+
+.MMM-VallaBus .l26 {
+    background: #80D0F7;
+    color: #000;
+}
+
+.MMM-VallaBus .lLP {
+    background: #00CDAE;
+    color: #fff;
+}
+
+.MMM-VallaBus .lLC {
+    background: #7DDE42;
+    color: #000;
+}
+
+.MMM-VallaBus .lLD {
+    background: #D536FD;
+    color: #000;
+}
+
+.MMM-VallaBus .lU1,
+.MMM-VallaBus .lU8 {
+    background: #FF3067;
+    color: #000;
+}
+
+.MMM-VallaBus .lL01 {
+    background: #23B4CA;
+    color: #fff;
+}
+
+.MMM-VallaBus .lL02 {
+    background: #40af64;
+    color: #fff;
+}
+
+.MMM-VallaBus .lRoja {
+    background: #ac2222;
+    color: #fff;
+    font-size: 17px;
+}
+
+.MMM-VallaBus .lAzul {
+    background: #156DE7;
+    color: #fff;
+    font-size: 17px;
+}
+
+.MMM-VallaBus .lVerde {
+    background: #1e6d37;
+    color: #fff;
+    font-size: 17px;
+}
+
+.MMM-VallaBus .lRioSh {
+    background: #a70a15;
+    color: #fff;
+    font-size: 17px;
+}
+
+.MMM-VallaBus .lAerop {
+    background: #006680;
+    color: #fff;
+    font-size: 17px;
+}
+
+.MMM-VallaBus .lBuho {
+    background: #000000;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-size: 17px;
+}
+
+.MMM-VallaBus .lR,
+.MMM-VallaBus .lR1,
+.MMM-VallaBus .lR2,
+.MMM-VallaBus .lR3,
+.MMM-VallaBus .lR4 {
+    background: #3B1391;
+    color: #fff;
+}

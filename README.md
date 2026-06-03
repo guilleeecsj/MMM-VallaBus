@@ -1,66 +1,82 @@
 # MMM-VallaBus
 
-MMM-VallaBus es un módulo para [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) que muestra información en tiempo real sobre los autobuses de diferentes empresas que operan en Valladolid.
+MMM-VallaBus es un módulo para [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) que muestra información en tiempo real sobre los autobuses urbanos que operan en Valladolid (AUVASA), ordenados por tiempo de llegada.
 
 ## Ejemplo de uso
 
-![Foto del ejemplo de uso del modulo MMM-VallaBus para MagicMirror](https://i.ibb.co/Fb4Qcnkk/image.png)
+![Foto del ejemplo de uso del modulo MMM-VallaBus para MagicMirror](https://i.ibb.co/9BPVwLc/image.png)
 
 ## Dependencias
 
 - [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror)
-- [API de Auvasa](https://github.com/VallaBus/api-auvasa), creado originalmente por [DaviidMM](https://github.com/DaviidMM)
+- [API de Auvasa](https://github.com/VallaBus/api-auvasa) (creada originalmente por [DaviidMM](https://github.com/DaviidMM)) o la API pública remota.
 
 ## Instalación del módulo
 
+### Opción A: Usando la API pública (Recomendado y por defecto)
+No requiere ningún despliegue adicional. El módulo consultará directamente a `https://gtfs.vallabus.com`.
 
+### Opción B: Despliegue de la API de AUVASA en local
+Si prefieres alojar la API en tu propio servidor o Raspberry Pi para un funcionamiento local:
 
-### Despliegue de la API de AUVASA en local
-
-```
+```bash
 cd ~/
 git clone https://github.com/VallaBus/api-auvasa.git
 cd api-auvasa
-mv .env.template .env
+cp .env.template .env
 npm install
 npm start
 ```
 
-### Integración del módulo en el MagicMirror
+### Integración del módulo en MagicMirror²
 
-```
+Clona este repositorio dentro de la carpeta de módulos de tu MagicMirror:
+
+```bash
 cd ~/MagicMirror/modules
 git clone https://github.com/guilleeecsj/MMM-VallaBus.git
 ```
 
-Una vez esté el módulo ya puesto en la carpeta de `modules` debes agregar la siguiente configuración al archivo `config.js` de MagicMirror²:
+Una vez clonado, agrega la configuración del módulo en el archivo `config/config.js` de MagicMirror²:
 
 ```js
 {
     module: "MMM-VallaBus",
-    position: "top_right", // La posición donde quieres que aparezca el módulo
+    position: "top_right", // Posición donde quieres que aparezca el módulo
     config: {
-        headerParada: true, // Mostrar o no la parada configurada en el header
-        headerText: "Buses de VALLADOLID",
-        parada: "000", // Número de la parada
-        resultados: 10, // Número de lineas de buses a mostrar
-        apiIP: "localhost", // IP donde se aloja la API
-        apiPort: "3000", // Puerto donde se encuentra la API
+        headerParada: true, // Mostrar la parada configurada en el título
+        headerText: "Buses de VALLADOLID", // Texto del título del módulo
+        parada: "000", // Número de la parada a consultar
+        resultados: 10, // Cantidad máxima de autobuses a mostrar
+        mostrarHoras: false, // true para mostrar hora de llegada (ej: 18:30), false para minutos restantes (ej: 5 min)
+        localAPI: false, // true para usar la API local, false para usar la API pública oficial de VallaBus
+        localAPI_IP: "localhost", // Host o IP de tu API local (solo si localAPI es true)
+        localAPI_Port: "3000", // Puerto de tu API local (solo si localAPI es true)
     }
 }
 ```
 
-| Configuración | Tipo | Valor por defecto | Descripcion |
+---
+
+## Opciones de Configuración
+
+| Configuración | Tipo | Valor por defecto | Descripción |
 | --- | --- | --- | --- |
-| `headerParada` | `boolean` | true | Activar / Desactivar que se muestre la parada configurada en el header |
-| `headerText` | `text` | Buses de VALLADOLID | Poner un texto determinado como header del modulo. |
-| `parada` | `number` | 000 | Configurar la parada de la cual quieres sacar la información. |
-| `resultados` | `number` | 10 | Limitar el numero de lineas que quieres que salga en el modulo. |
-| `apiIP` | `text` | localhost | Configurar el host donde está alojada la API. |
-| `apiPort` | `text` | 3000 | Configurar el puerto donde está alojada la API. |
+| `headerParada` | `boolean` | `true` | Activa o desactiva que se concatene el número de parada configurado en el título. |
+| `headerText` | `string` | `"Buses de VALLADOLID"` | Título principal del módulo. |
+| `parada` | `string` o `number` | `"000"` | Identificador/Número de la parada de la cual deseas obtener la información. |
+| `resultados` | `number` | `10` | Cantidad máxima de líneas de autobuses a listar. |
+| `mostrarHoras` | `boolean` | `false` | Si es `true`, muestra la hora exacta estimada (ej. `20:15`). Si es `false`, muestra el tiempo relativo en minutos (ej. `7 min`). Si el tiempo de llegada es menor a 1 minuto (tiempo = 0), muestra el estado animado **`Llegando`** en color verde y con parpadeo suave. |
+| `localAPI` | `boolean` | `false` | Si es `true`, el módulo intentará realizar las peticiones a un servidor local de AUVASA API. Si es `false`, utilizará la API pública de VallaBus. |
+| `localAPI_IP` | `string` | `"localhost"` | IP o dominio donde está alojada la API de AUVASA local. |
+| `localAPI_Port` | `string` | `"3000"` | Puerto de red de la API de AUVASA local. |
+
+---
 
 ## Contribuciones
-Las contribuciones en este proyecto son bienvenidas. Si desea aportar algo, abra una [issue](https://github.com/guilleeecsj/MMM-VallaBus/issues) o una [pull request](https://github.com/guilleeecsj/MMM-VallaBus/pulls).
+
+Las contribuciones a este proyecto son bienvenidas. Si deseas aportar una mejora o corregir un fallo, siéntete libre de abrir un [issue](https://github.com/guilleeecsj/MMM-VallaBus/issues) o una [pull request](https://github.com/guilleeecsj/MMM-VallaBus/pulls).
 
 ## Licencia
-Este proyecto está licenciado bajo la Licencia [MIT](https://opensource.org/license/mit).
+
+Este proyecto está bajo la Licencia [MIT](https://opensource.org/license/mit).
