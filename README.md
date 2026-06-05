@@ -1,6 +1,6 @@
 # MMM-VallaBus
 
-MMM-VallaBus es un módulo para [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) que muestra información en tiempo real sobre los autobuses urbanos que operan en Valladolid (AUVASA), ordenados por tiempo de llegada.
+MMM-VallaBus es un módulo para [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) que muestra información en tiempo real sobre los principales autobuses urbanos que operan en Valladolid (AUVASA, ECSA, La Regional y Linecar), ordenados por tiempo de llegada.
 
 ## Ejemplo de uso
 
@@ -16,7 +16,7 @@ MMM-VallaBus es un módulo para [MagicMirror²](https://github.com/MagicMirrorOr
 ### Opción A: Usando la API pública (Recomendado y por defecto)
 No requiere ningún despliegue adicional. El módulo consultará directamente a la API GTFS pública de VallaBus.
 
-### Opción B: Despliegue de la API de AUVASA en local
+### Opción B: Despliegue de la API de VallaBus en local
 Si prefieres alojar la API en tu propio servidor o Raspberry PI para un funcionamiento local:
 
 ```bash
